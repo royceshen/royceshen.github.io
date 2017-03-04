@@ -3,6 +3,7 @@ nav
 {
 	background: rgba(0,0,0, 0.20);
 	height: 50px;
+
 	
 }
 
@@ -74,16 +75,27 @@ nav ul li
 	line-height: 50px;
 	float:right;
 	margin-right: 20px;
-	
+	padding: 20 0px;
+
 }
 
 nav ul li a 
 {
-    line-height: 50px;
+    line-height: 30px;
     text-decoration: none;
     display: inline-block;
     height: inherit;
     color: #fff;
+    min-width: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul a:hover
+{
+	background: #9b9367;
+	width: 100%;
 }
 
 ul
@@ -94,7 +106,13 @@ ul
 nav ul li.logo
 {
 	float: left;
+	
+
+
+
 }
+
+
 
 h1
 {
@@ -224,11 +242,15 @@ input
 .img_section
 {
 	width: 38%;
+
 }
 
 .img_section img
 {
 	width: 100%;
+	max-height: 400px;
+	min-width: 500px;
+	margin:20px;
 }
 
 .text_section 
@@ -237,6 +259,7 @@ input
 	    top: 100px;
 	    left: 49px;
 		width:55%;
+		margin-top: 80px;
 
 }
 
@@ -274,8 +297,15 @@ input
 
 .text_section h2
 {
-	font-size: 35px;
+	font-size: 25px;
 	letter-spacing: 1px;
+}
+
+.text_section  .subtitle
+{
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 0;
 }
 
 .text_section >*
@@ -399,10 +429,10 @@ footer
 #sidebar
 {
 	position: fixed;
-	top: 0;
+	top: 50px;
 	bottom: 0;
-	right: -300px;
-	width: 300px;
+	left: -300px;
+	width: 100px;
 	background: #333;
 	color: #fff;
 	transition: 0.5s;
@@ -426,7 +456,7 @@ footer
 #sidebar ul a:hover
 {
 	background: #444;
-	width: 100%;
+	width: 40%;
 }
 
 
